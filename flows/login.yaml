@@ -1,0 +1,12 @@
+appId: "com.kaplan.lms"
+---
+- launchApp:
+    appId: com.kaplan.lms
+    stopApp: true
+    clearState: true
+- tapOn: "Username"
+- inputText: ${USERNAME}
+- tapOn: "Password"
+- inputText: ${PASSWORD}
+- tapOn: "Login"
+- assertVisible: "Welcome, demaster!"
